@@ -1,0 +1,131 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+    font-family: Figtree;
+    font-weight: 500;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-body {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.card-body {
+    width: 350px;
+    /* height: 450px; */
+    border: 1px solid black;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 0 hsl(0, 0%, 7%);
+}
+@media (max-width: 375px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+    .card-body {
+        width: 280px;
+        height: 450px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+    }
+}
+
+.preview-picture {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 375px) {
+    .preview-picture {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+}
+
+.preview-picture img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.label-yellow {
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    width: 4rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 375px) {
+    .label-yellow {
+        margin-bottom: 15px;
+    }
+}
+
+.date-published {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 375px) {
+    .date-published {
+        margin-bottom: 15px;
+    }
+}
+
+.blog-title {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 375px) {
+    .blog-title {
+        margin-bottom: 20px;
+    }
+}
+
+.card-paragraph {
+    color: hsl(0, 0%, 42%);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+    .card-paragraph {
+        margin-bottom: 25px;
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+}
+
+.profile-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-picture img {
+    width: 100%;
+    object-fit: cover;
+}
